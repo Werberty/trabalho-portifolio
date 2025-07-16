@@ -157,7 +157,7 @@ h3 {
     height: 15rem;
     width: 100%;
     margin-bottom: -.3rem;
-    border-radius: .8rem;
+    border-radius: 0 0 .8rem .8rem;
 }
 
 /* Estilos para página Contato */
