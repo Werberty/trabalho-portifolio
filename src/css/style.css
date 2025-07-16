@@ -1,0 +1,228 @@
+body {
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+
+h3 {
+    margin-top: 0;
+}
+/* Estilos para o cabeçalho */
+#container-nav {
+    margin: 0 15% 0 15%;
+    background-color: rgb(36, 138, 255);
+    border-radius: .8rem;
+    box-shadow: 1.5px 1.5px 6px grey;
+    text-align: center;
+}
+
+.nav-title {
+    margin-bottom: -.8rem;
+    padding-top: .8rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.nav-title .logo-ico {
+    height: 1.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: .8rem 0 .8rem 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #3a3436;
+    font-weight: normal;
+}
+
+.nav-links li.active a {
+    color: #3a3436;
+    font-weight: bold;
+}
+
+/* Estilos para o corpo da página */
+.tab {
+    display: none; /* Deixa todas as páginas ocultas por padrão */
+}
+
+.tab.active {
+    display: block; /* Deixa a página visivel novamente caso contenha a classe */
+}
+
+#container-content {
+    background-color: rgb(36, 138, 255);
+    box-shadow: 1.5px 1.5px 6px grey;
+    margin: 0 15% 0 15%;
+    min-height: 79vh;
+    border-radius: .8rem;
+}
+
+.body-content {
+    padding: 1rem;
+}
+
+/* Estilos da página Sobre */
+.body-sobre {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+}
+
+.body-sobre p {
+    align-self: center;
+    margin-bottom: 0;
+}
+
+.body-sobre #img-perfil {
+    height: 25rem;
+    margin-right: 1rem;
+    border-radius: .8rem 0 0 .8rem;
+}
+
+/* Estilos para a página Formação */
+.body-formacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.body-formacao h3 {
+    text-align: center;
+}
+
+.body-formacao #img-formacao {
+    height: 8rem;
+    width: auto;
+    margin: auto;
+}
+
+#list-formacao {
+    line-height: 1.8rem;
+}
+
+/* Estilos para página Portifólio */
+.body-portifolio {
+    margin: 0 5rem 0 5rem;
+    text-align: center;
+}
+
+.body-portifolio ul {
+    list-style-type: none;
+}
+
+.card-projects {
+    /* Grids de 2x2 para os cards dos projetos */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.card-item {
+    background-color: aliceblue;
+    color: #3a3436;
+    text-align: center;
+    border-radius: .8rem .8rem 0 0;
+    width: 30rem;
+    transition: transform 0.25s ease-out, box-shadow 0.25s ease-out; /* Transição suave para a mudança de escala e a sombra */
+}
+
+.card-item:hover {
+    transform: scale(1.03); /* Isso aumenta a escala do cad em 3% */
+    box-shadow: 1.5px 1.5px 6px grey;
+}
+
+.card-item h5 {
+    margin: .5rem;
+}
+
+.card-item img {
+    height: 15rem;
+    width: 100%;
+    margin-bottom: -.3rem;
+}
+
+/* Estilos para página Contato */
+.body-contato h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.inputs-form {
+    display: grid;
+    gap: 1rem;
+    margin: 0 12rem 0 12rem;
+}
+
+.inputs-form input, .inputs-form textarea {
+    border-radius: .3rem;
+    border: none;
+    padding: .4rem;
+}
+
+.inputs-form button {
+    background-color: #8bc363;
+    color: white;
+    border-radius: .3rem;
+    border: none;
+    padding: .4rem;
+}
+
+.inputs-form button:hover {
+    background-color: #5c764c;
+    cursor: pointer;
+}
+
+.inputs-form button:active {
+    background-color: #3a3436;
+}
+
+/* Estilos para o Roda Pé */
+#container-footer {
+    /* Fixando o footer com estilo parecido com o do header */
+    margin: 0 15% 0 15%;
+    background-color: rgb(36, 138, 255);
+    border-radius: .8rem;
+    box-shadow: 1.5px 1.5px 6px grey;
+    text-align: center;
+}
+
+.links-social-media {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.links-social-media li {
+    margin: .8rem 0 .8rem 0;
+}
+
+.links-social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-social-media a:hover {
+    color: #3a3436;
+    font-weight: normal;
+}
